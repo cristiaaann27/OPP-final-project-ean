@@ -205,7 +205,7 @@ class Main():
         if self.registration_window is None:
             self.registration_window = tk.Toplevel(self.root)
             self.registration_window.title("Registration")
-            self.registration_window.geometry("250x250")
+            self.registration_window.geometry("250x500")
 
             # User Role Label and OptionMenu
             role_label = tk.Label(self.registration_window,
@@ -244,7 +244,7 @@ class Main():
         # Implement login form here
         self.login_window = tk.Toplevel(self.root)
         self.login_window.title("Login")
-        self.login_window.geometry("250x250")
+        self.login_window.geometry("250x500")
 
         # ID Label and Entry
         dni_label = tk.Label(self.login_window, text="DNI:")
@@ -335,7 +335,7 @@ class Main():
     def register_passenger(self):
         self.registration_passenger_window = tk.Toplevel(self.root)
         self.registration_passenger_window.title("Passenger Registration")
-        self.registration_passenger_window.geometry("250x250")
+        self.registration_passenger_window.geometry("250x500")
 
         # Name
         name_label = tk.Label(self.registration_passenger_window, text="Name:")
@@ -431,7 +431,7 @@ class Main():
     def register_driver(self):
         self.registration_driver_window = tk.Toplevel(self.root)
         self.registration_driver_window.title("Driver Registration")
-        self.registration_driver_window.geometry("250x250")
+        self.registration_driver_window.geometry("250x500")
 
         # Name
         name_label = tk.Label(self.registration_driver_window, text="Name:")
@@ -542,7 +542,7 @@ class Main():
     def register_administrator(self):
         self.registration_admin_window = tk.Toplevel(self.root)
         self.registration_admin_window.title("Passenger Registration")
-        self.registration_admin_window.geometry("250x250")
+        self.registration_admin_window.geometry("250x500")
 
         # Name
         name_label = tk.Label(self.registration_admin_window, text="Name:")
@@ -637,7 +637,7 @@ class Main():
         self.role = role
         if self.person_window is None:
             self.person_window = tk.Toplevel(self.root)
-            self.person_window.title("Passenger Information")
+            self.person_window.title("Person Information")
             self.person_window.geometry("500x500")
 
             # Name label
